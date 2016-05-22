@@ -1,0 +1,169 @@
+html, body {
+	font-size: 100%;
+	background-color: #669999;
+	color: white;
+	font-family:"Century Gothic", Helvetica, Arial, sans-serif;
+}
+.page {
+	max-width: 980px;
+	min-width: 720px;
+	margin: 10px auto 10px auto;
+	padding: 20px;
+}
+
+/*Title header*/
+
+.title {
+	margin-left: auto;
+}
+.title h1 {
+	font-style: italic;
+	font-size: 60px;
+	font-weight: 100;
+	margin: 25px 0 0 0;
+	letter-spacing: 2px;
+}
+.title h2 {
+	margin: 0 0 30px 0;
+	font-size: 18px;
+	color: white;
+}
+
+/*navigation bar*/
+.nav {
+	height: 30px;
+	width: 100%;
+	color: white;
+	text-transform: uppercase;
+}
+.nav ul {
+	list-style: none;
+	text-align: center; 
+	margin: 0; 
+	letter-spacing: 2px;
+	text-align: right;
+}
+.nav ul li {
+	display: inline-block;
+	font-size: 16px;
+	padding: 0 20px;
+}
+.btn {
+	text-decoration: none;
+	color: white;
+}
+.btn:hover {
+	text-decoration: none;
+	cursor: pointer; 
+	transition: background .5s;
+	color: 	#48504c;
+}
+
+/*Footer*/
+.footer {
+	text-align: right;
+	font-size: 12px;
+	font-family:"Century Gothic", Helvetica, Arial, sans-serif;
+	clear: both;
+}
+
+/*home tab*/
+.main{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main img{
+	display: block;
+    margin: 20px auto;
+    width: 1000px;
+    height: 650px;
+}
+
+
+/*about tab*/
+.mainabout {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 600px;
+    float: left;
+}
+.mainabout h1 {
+	font-size: 18px;
+	color: #48504c;
+	margin-top: 30px;
+}
+.mainabout p {
+	color: #242a27;
+	font-family: "Century Gothic" "Lucida Grande" sans-serif;
+	font-size: 14px;
+	font-weight: 120;
+}
+.aboutpicture{
+	float: right;
+	margin: 90px auto;
+}
+.aboutpicture img {
+	width:350px;
+}
+
+
+/*Paintings Tab*/
+
+.paintings {
+	float: left;
+	width: 300px;
+	margin: 40px 12px;
+}
+.paintings img {
+	width: 280px;
+	height: 392.41px;
+}
+
+.paintings figure {
+	display: block;
+	width: 282px;
+	margin: 0px auto 0px auto;
+}
+.paintings figcaption {
+	text-align: center;
+}
+
+/*Contact Tab*/
+
+.contact {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    width: 500px;
+    float: left;
+    text-align: center;
+}
+.contact h1 {
+	font-size: 24px;
+}
+
+.contact a{
+	text-decoration: none;
+	color: #48504c;
+	margin: 10px 20px 0 20px;
+	display: inline-block;
+	font-weight: bold;
+}
+.contact a:hover {
+	text-decoration: none;
+	cursor: pointer; 
+	transition: background .5s;
+	color: 	white;
+}
+
+.contactpicture{
+	float: left;
+	margin: 40px auto;
+}
+.contactpicture img {
+	width:400px;
+}
