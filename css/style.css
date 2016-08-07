@@ -60,6 +60,20 @@ html, body {
 	color: 	#48504c;
 }
 
+.nav ul li:hover ul {
+	display: block;
+}
+.nav ul ul {
+	display: none;
+	position: absolute;
+	text-align:center;
+	margin-left: -85px;
+}
+.nav ul ul li {
+	display: block;
+	font-size: 14px;
+}
+
 /*Footer*/
 .footer {
 	text-align: right;
