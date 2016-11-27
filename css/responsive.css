@@ -50,13 +50,11 @@
 
 .nav ul ul {
 	position: relative;
-	margin: 0, 300%, 0, 0;
 	transform: translate(-75%, -18%);
 }
 
 .nav ul ul li {
 	position: relative;
-	margin: 0, 300%, 0, 0;
 	display: inline-block;
 }
 
