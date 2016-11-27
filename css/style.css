@@ -35,6 +35,12 @@ html, body {
 }
 
 /*navigation bar*/
+
+.headermenu {
+  display: none;
+}
+
+
 .nav {
 	width: 100%;
 	color: white;
@@ -71,6 +77,7 @@ html, body {
 	margin: 0 5% 0 0;
 	position: absolute;
 }
+
 
 
 .nav ul ul {
