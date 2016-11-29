@@ -82,6 +82,7 @@ html, body {
 
 .nav ul ul {
 	display: none;
+	transform: translate(0, 0);
 }
 .nav ul ul li {
 	display: block;

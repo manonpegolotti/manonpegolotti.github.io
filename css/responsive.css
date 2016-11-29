@@ -23,13 +23,13 @@
     width: 23%;
     display: block;
     position: absolute;
-    margin: 0;
+    margin: 0, 0, 5%, 0;
     color: #48504c;
     /* This trasform moves the drawer off canvas. */
     -webkit-transform: translate(-250px, 0);
     transform: translate(-250px, 0);
     /* Optionally, we animate the drawer. */
-    transition: transform 0.3s ease;
+    transition: transform 0.1s ease;
   }
   
 .nav.open {
@@ -83,7 +83,37 @@
     width: 100%;
     max-height: 600px;
     }
+
+
+/*footer*/
+.footer p {
+	font-size: 6px;
 }
+
+
+
+/*about tab*/
+
+.about {
+	position: absolute;
+	margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
+.mainabout h1 {
+	font-size: 90%;
+	color: #48504c;
+}
+.mainabout p {
+	color: #242a27;
+	font-family: "Century Gothic" "Lucida Grande" sans-serif;
+	font-size: 70%;
+	font-weight: 120;
+}
+.aboutpicture img {
+	max-width:250px;
+	min-width: 200px;
+	
 
 }

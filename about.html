@@ -2,7 +2,9 @@
 <html>
 <head>
 <title>Home</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
 <link href="css/style.css" type="text/css" rel="stylesheet" />
+
 </head>
 <body>
 	<div class="page">
@@ -10,7 +12,7 @@
 			<h1>Blue.Sea.Anne</h1>
 			<h2>Paintings by Anne Pegolotti</h2>
 		</div>
-		<div class = "nav">
+		<div id="drawer" class = "nav">
 			<ul>
 				<li><a href="index.html" class="btn">Home</a></li><li>
 				<a href="about.html" class="btn">About</a></li><li>
@@ -27,14 +29,14 @@
 			</ul>
 		</div>
 		<div class ="about">
-		<div class ="mainabout">
-			<div class ="aboutartist">
-				<h1>About the artist</h1>
-				<p>Anne Marie Pegolotti was born and raised in France, Quimper (Brittany).
+			<div class ="mainabout">
+				<div class ="aboutartist">
+					<h1>About the artist</h1>
+					<p>Anne Marie Pegolotti was born and raised in France, Quimper (Brittany).
 				She studied in France at the University of Brest and then at the University of Paris 10.
 				She moved to the USA (California) in 2000 with her husband and her 3 children.
-				</p>
-			</div>
+					</p>
+				</div>
 			<div class= "Statement">
 				<h1>Statement</h1>
 				<p>My journey started in 2006 when I volunteered at an art event at my children&rsquo;s school. I discovered a whole new world and started painting at home as a hobby, sometimes completing only two or three pieces a year.</p>
@@ -59,5 +61,22 @@
 			<p>Site by <a href="mailto:manonpegolotti@gmail.com" class="btn">Manon Pegolotti</a></p>
 		</div>
 		</div>
+	<script>
+      /*
+       * Open the drawer when the menu icon is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var about = document.querySelector('about');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
 	</body>
 	</html>
