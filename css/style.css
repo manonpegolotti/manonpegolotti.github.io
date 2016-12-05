@@ -187,22 +187,6 @@ html, body {
 	height: 392.41px;
 	position: center;
 }
-.paintings img {
-	width: 280px;
-	height: 392.41px;
-	position: center center;
-	object-fit: cover;
-}
-
-.paintings figure {
-	display: block;
-	width: 282px;
-	margin: 0px auto 0px auto;
-}
-.paintings figcaption {
-	text-align: center;
-}
-}
 
 .paintings2 figure {
 	display: block;
