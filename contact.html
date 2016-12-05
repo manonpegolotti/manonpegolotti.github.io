@@ -2,15 +2,22 @@
 <html>
 <head>
 <title>Home</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
 <link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/responsive.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
 	<div class="page">
 		<div class="title">
 			<h1>Blue.Sea.Anne</h1>
 			<h2>Paintings by Anne Pegolotti</h2>
+			<a id="menu" class="headermenu">
+          		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            	<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          		</svg>
+        	</a>
 		</div>
-		<div class = "nav">
+		<div id="drawer" class = "nav">
 			<ul>
 				<li><a href="index.html" class="btn">Home</a></li><li>
 				<a href="about.html" class="btn">About</a></li><li>
@@ -26,31 +33,44 @@
 				<a href="contact.html" class="btn">Contact</a></li>
 			</ul>
 		</div>
-		<div class="contactpage">
+		<div class ="contactpage">
+		<div class="contactdiv">
 			<img class="eventimg" src ="event2.jpg"/>
-			<div class = "contact">
-			<h1>Come join me at the annual More the Merrier Salon!</h1>
-			<p>Opening Reception: Friday, November 4, 2016, 6-9pm<br />
-				Closing Reception: Friday, December 2, 2016, 6-9pm</p>
-			<p>Art Ark Gallery<br />
-				1035 South 6th Street<br />
-				San Jose, CA<br /></p>
+			<div class="contact"/>
+			<h1>Contact me for future events!</h1>
 			<p>Email: <a href="mailto:blueseanne@yahoo.com">blue.sea.anne@gmail.com</a></p>
 			<p>Follow me on <a href="https://www.facebook.com/BlueSeaAnne-488020251391161/" class="facebook">Facebook</a></p>
 			</div>
 		</div>
-		<!--
-		<div class="pastevent">
+		 <div class="pastevent">
 			<img src ="event.jpg"/>
 			<div class="pastevent2">
 			<h1>Past Events</h1>
-			<p>Menlo Park First Friday - 10/7/2016</p>
+			<p>Menlo Park First Friday - 10/7/16</p>
+			<p>Annual More the Merrier Salon - 11/4/16 through 12/2/16</p>
 			</div>
 		</div>
-		-->
+		</div>
 		<div class ="footer">
 			<p>Site by <a href="mailto:manonpegolotti@gmail.com" class="btn">Manon Pegolotti</a></p>
 		</div>
 	</div>
+	<script>
+      /*
+       * Open the drawer when the menu icon is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var about = document.querySelector('about');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
 </body>
 </html>

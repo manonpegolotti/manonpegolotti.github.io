@@ -96,7 +96,7 @@
 
 .about {
 	position: absolute;
-	margin-top: 10%;
+	margin-top: 1%;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -111,9 +111,35 @@
 	font-size: 70%;
 	font-weight: 120;
 }
-.aboutpicture img {
-	max-width:250px;
-	min-width: 200px;
-	
+.aboutpicture {
+	max-width:220px;
+	min-width: 150px;
+}
 
+.contactpage {
+ 	margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contactpage h1 {
+	font-size: 100%;
+}
+.contactpage p {
+	font-size: 80%;
+}
+
+}
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+.aboutpicture {
+	max-width:260px;
+	min-width: 180px;
+}
+}
+
+@media screen and (min-width: 550px) and (max-width: 649px) {
+.aboutpicture {
+	max-width:240px;
+	min-width: 180px;
+}
 }

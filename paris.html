@@ -2,15 +2,22 @@
 <html>
 <head>
 <title>Home</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
 <link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/responsive.css" type="text/css" rel="stylesheet"/>
 </head>
 <body>
 	<div class="page">
 		<div class="title">
 			<h1>Blue.Sea.Anne</h1>
 			<h2>Paintings by Anne Pegolotti</h2>
+			<a id="menu" class="headermenu">
+          		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            	<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          		</svg>
+        	</a>
 		</div>
-		<div class = "nav">
+		<div id="drawer" class = "nav">
 			<ul>
 				<li><a href="index.html" class="btn">Home</a></li><li>
 				<a href="about.html" class="btn">About</a></li><li>
@@ -57,5 +64,22 @@
 			<p>Site by <a href="mailto:manonpegolotti@gmail.com" class="btn">Manon Pegolotti</a></p>
 		</div>
 	</div>
+	<script>
+      /*
+       * Open the drawer when the menu icon is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var about = document.querySelector('about');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
 </body>
 </html>
