@@ -216,7 +216,7 @@ font-size: 140%;
 
 .contact {
 	display: block;
-    margin-top: 10%;
+    margin-top: 6%;
     width: 48%;
     text-align: center;
     float: right;
@@ -270,3 +270,14 @@ font-size: 140%;
 	float: right;
 	margin-top: 3%;
 }
+.pop-out
+    {
+        transition: transform .5s;
+    }
+
+.pop-out:hover
+    {
+        -ms-transform: scale(1.5, 1.5);
+        -webkit-transform: scale(1.5, 1.5);
+        transform: scale(1.5, 1.5);
+    }

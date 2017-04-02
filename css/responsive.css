@@ -29,7 +29,7 @@
     -webkit-transform: translate(-250px, 0);
     transform: translate(-250px, 0);
     /* Optionally, we animate the drawer. */
-    transition: transform 0.1s ease;
+    transition: transform 0 ease;
   }
   
 .nav.open {
