@@ -149,6 +149,7 @@ html, body {
 /*Paintings Tab*/
 
 .price {
+	float: right;
 	position: fixed;
 	color: #3b5998;
 	text-align: center;
