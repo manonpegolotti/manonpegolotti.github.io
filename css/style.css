@@ -148,6 +148,48 @@ html, body {
 
 /*Paintings Tab*/
 
+.price {
+	position: fixed;
+	color: #3b5998;
+	text-align: center;
+	width: 12%;
+	height: 20%;
+	clear: both;
+}
+
+.price p{
+	font-size: 85%;
+	font-family:"Arial Bold", sans-serif;
+	font-weight: bold;
+}
+
+.price div{
+	background-color: #669999;
+	border-radius: 25px;
+}
+
+.price a {
+	color: #242a27;
+}
+
+.fa {
+    background-color: #3b5998;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    margin: 2px 2px;
+    width: 24px;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
 
 .paintingpage {
 	display: block;

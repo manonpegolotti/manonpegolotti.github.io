@@ -58,17 +58,18 @@
 	display: inline-block;
 }
 
-  .headermenu {
+.headermenu {
   	width: 100%;
     display: inline-block;
     margin: -3% 5% 2% 0%;
     text-align: right;
     float: right;
-  }
-  .headermenu svg {
+}
+
+.headermenu svg {
     width: 8%;
     fill: white;
-  }
+}
 
 
 
@@ -141,5 +142,15 @@
 .aboutpicture {
 	max-width:240px;
 	min-width: 180px;
+}
+}
+@media screen and (max-width:549px) {
+.price {
+	margin-top: 20%;
+}
+}
+
+@media screen and (max-width:549px) {
+.price p { display:none; 
 }
 }
