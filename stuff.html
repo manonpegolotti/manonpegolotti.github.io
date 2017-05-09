@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/responsive.css" type="text/css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="page">
+		<div class ="price">
+			<p>Contact me </br>for pricing </br>information</p>
+			<a href="https://www.facebook.com/BlueSeaAnne-488020251391161/"><i style="font-size:24px" class="fa">&#xf09a;</i></a></br>
+			<a href="mailto:blueseanne@yahoo.com"><i style="font-size:24px" class="fa">&#xf0e0;</i></a>
+		</div>
+		<div class="title">
+			<h1>Blue.Sea.Anne</h1>
+			<h2>Paintings by Anne Pegolotti</h2>
+			<a id="menu" class="headermenu">
+          		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            	<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          		</svg>
+        	</a>
+		</div>
+		<div id="drawer" class = "nav">
+			<ul>
+				<li><a href="index.html" class="btn">Home</a></li><li>
+				<a href="about.html" class="btn">About</a></li><li>
+				<a href="paintings.html" class="btn">Paintings</a>
+					<ul>
+						<li><a href="nouveaute.html" class="btn">Nouveaut&eacute;s!</a></li><li>
+						<a href="calendar.html" class="btn">BlueSea Girls Calendar</a></li><li>
+						<a href="cotecoeur.html" class="btn">Cot&eacute; Coeur</a></li><li>
+						<a href="marin.html" class="btn">Marins/Marines</a></li><li>
+						<a href="moments.html" class="btn">Moments</a></li><li/>
+						<a href="paris.html" class="btn">Mon Petit Paris</a></li><li>
+						<a href="asie.html" class="btn">Parfum d'Asie</a></li>
+					</ul>
+				</li><li>
+				<a href="stuff.html" class="btn">More</a></li><li>
+				<a href="contact.html" class="btn">Contact</a></li>
+			</ul>
+		</div>
+		<div class="paintingpage">
+		<div class="paintings3">
+			<figure><img src="pancartes.jpg"/>
+				<figcaption>Pancartes</figcaption>
+			</figure>
+		</div>
+		</div>
+		
+	<div class ="footer">
+			<p>Site by <a href="mailto:manonpegolotti@gmail.com" class="btn">Manon Pegolotti</a></p>
+		</div>
+	</div>
+	<script>
+      /*
+       * Open the drawer when the menu icon is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var about = document.querySelector('about');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
+</body>
+</html>

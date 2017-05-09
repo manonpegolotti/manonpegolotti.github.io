@@ -152,10 +152,13 @@ html, body {
 	float: right;
 	position: fixed;
 	color: #3b5998;
-	text-align: center;
-	width: 12%;
+	text-align: right;
+	width: 99%;
 	height: 20%;
 	clear: both;
+	display: block;
+		margin-top: 2%;
+	margin-right: 1%;
 }
 
 .price p{
@@ -167,6 +170,8 @@ html, body {
 .price div{
 	background-color: #669999;
 	border-radius: 25px;
+	margin-top: 3%;
+	margin-left: 1%;
 }
 
 .price a {
@@ -239,6 +244,27 @@ html, body {
 .paintings2 figcaption {
 	text-align: center;
 }
+
+.paintings3 {
+	display:inline-block;
+	width: 300px;
+	margin: 40px 12px;
+}
+.paintings3 img {
+	width: 280px;
+	height: 300px;
+	position: center;
+}
+
+.paintings3 figure {
+	display: block;
+	width: 282px;
+	margin: 0px auto 0px auto;
+}
+.paintings3 figcaption {
+	text-align: center;
+}
+
 
 /*Contact Tab*/
 

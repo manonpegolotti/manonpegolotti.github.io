@@ -148,9 +148,12 @@
 .price {
 	margin-top: 24%;
 }
+.price p { display:none; 
+}
 }
 
-@media screen and (max-width:549px) {
-.price p { display:none; 
+@media screen and (max-width:900px) {
+.nav ul li {
+	font-size: 90%;
 }
 }
