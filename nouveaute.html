@@ -42,77 +42,101 @@
 			</ul>
 		</div>
 		<div class="paintingpage">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<div class="paintings">
-			<figure><img src="morvach.jpg"/>
+			<figure><img class="myImg" src="summeroflove.jpg"/>
+				<figcaption>Summer of love</figcaption>
+			</figure>
+		</div>
+		<div class="paintings">
+			<figure><img class="myImg" src="morvach.jpg"/>
 				<figcaption>Morvac'h</figcaption>
 			</figure>
 		</div>
 		<div class="paintings2">
-			<figure><img src="kerys.jpg"/>
+			<figure><img class="myImg" src="kerys.jpg"/>
 				<figcaption>Ker-Ys</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="petitspoissonsdavril.jpg"/>
+			<figure><img class="myImg" src="melimelodetourseiffel.jpg"/>
+				<figcaption>Méli-mélo de tours Eiffel</figcaption>
+			</figure>
+		</div>
+		<div class="paintings">
+			<figure><img class="myImg" src="petitspoissonsdavril.jpg"/>
 				<figcaption>Petits poisson d'Avril - SOLD</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="poissonscoeurs.jpg"/>
+			<figure><img class="myImg" src="poissonscoeurs.jpg"/>
 				<figcaption>Poissons-coeurs</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="nuitmauve.jpg"/>
+			<figure><img class="myImg" src="nuitmauve.jpg"/>
 				<figcaption>Nuit mauve</figcaption>
 			</figure>
 		</div>
 		<div class="paintings2">
-			<figure><img src="lapetiteroberouge.jpg"/>
+			<figure><img class="myImg" src="lapetiteroberouge.jpg"/>
 				<figcaption>La petite robe rouge - SOLD</figcaption>
 			</figure>
 		</div>
 		<div class="paintings2">
-			<figure><img src="whatif.jpg"/>
+			<figure><img class="myImg" src="whatif.jpg"/>
 				<figcaption>What if - SOLD</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="latetedanslesetoiles.jpg"/>
+			<figure><img class="myImg" src="latetedanslesetoiles.jpg"/>
 				<figcaption>La t&ecirc;te dans les &eacute;toiles</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="lil&will.jpg"/>
+			<figure><img class="myImg" src="lil&will.jpg"/>
 				<figcaption>Lil' & Will</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="unphareenbretagne.jpg"/>
+			<figure><img class="myImg" src="unphareenbretagne.jpg"/>
 				<figcaption>Un phare en Bretagne</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="ahes.jpg"/>
+			<figure><img class="myImg" src="ahes.jpg"/>
 				<figcaption>Ahes</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="lapluie.jpg"/>
+			<figure><img class="myImg" src="lapluie.jpg"/>
 				<figcaption>La pluie</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="valentinesday.jpg"/>
+			<figure><img class="myImg" src="valentinesday.jpg"/>
 				<figcaption>Méli-mélo de coeurs</figcaption>
 			</figure>
-		</div>				
+		</div>	
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+  		<!-- The Close Button -->
+  		<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  		<!-- Modal Content (The Image) -->
+  		<img class="modal-content" id="img01">
+
+ 		 <!-- Modal Caption (Image Text) -->
+ 		 <div id="caption"></div>
+		</div>			
 		</div>
 	<div class ="footer">
 			<p>Site by <a href="mailto:manonpegolotti@gmail.com" class="btn">Manon Pegolotti</a></p>
 		</div>
 	</div>
 	<script>
+	// The Nav Bar Icon
       /*
        * Open the drawer when the menu icon is clicked.
        */
@@ -127,7 +151,30 @@
       main.addEventListener('click', function() {
         drawer.classList.remove('open');
       });
+	</script>
+	<script>
+	// Modal: Popup images
+	// Get the modal
+	var modal = document.getElementById('myModal');
 
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = $('.myImg');
+	var modalImg = $("#img01");
+	var captionText = document.getElementById("caption");
+		$('.myImg').click(function(){
+    		modal.style.display = "block";
+    		var newSrc = this.src;
+    		modalImg.attr('src', newSrc);
+    		captionText.innerHTML = this.alt;
+		});
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+  		modal.style.display = "none";
+	}
     </script>
 </body>
 </html>

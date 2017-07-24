@@ -42,65 +42,78 @@
 			</ul>
 		</div>
 		<div class="paintingpage">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<div class="paintings">
-			<figure><img src="Paintings/Calendar/janvier.jpg"/>
+			<figure><img class="myImg" src="Paintings/Calendar/janvier.jpg"/>
 				<figcaption>Janvier</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="Paintings/Calendar/fevrier.jpg"/>
+			<figure><img class="myImg" src="Paintings/Calendar/fevrier.jpg"/>
 				<figcaption>F&eacute;vrier</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="Paintings/Calendar/mars.jpg"/>
+			<figure><img class="myImg" src="Paintings/Calendar/mars.jpg"/>
 				<figcaption>Mars</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="Paintings/Calendar/avril.jpg"/>
-				<figcaption>Avril</figcaption>
+			<figure><img class="myImg" src="Paintings/Calendar/avril.jpg"/>
+				<figcaption>Avril - SOLD</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="Paintings/Calendar/mai.jpg"/>
+			<figure><img class="myImg" src="Paintings/Calendar/mai.jpg"/>
 				<figcaption>Mai - SOLD</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="Paintings/Calendar/juin.jpg"/>
+			<figure><img class="myImg" src="Paintings/Calendar/juin.jpg"/>
 				<figcaption>Juin</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="Paintings/Calendar/juillet.jpg"/>
+			<figure><img class="myImg" src="Paintings/Calendar/juillet.jpg"/>
 				<figcaption>Juillet</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="Paintings/Calendar/aout.jpg"/>
+			<figure><img class="myImg" src="Paintings/Calendar/aout.jpg"/>
 				<figcaption>A&ocirc;ut</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="Paintings/Calendar/septembre.jpg"/>
+			<figure><img class="myImg" src="Paintings/Calendar/septembre.jpg"/>
 				<figcaption>Septembre</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="Paintings/Calendar/octobre.jpg"/>
+			<figure><img class="myImg" src="Paintings/Calendar/octobre.jpg"/>
 				<figcaption>Octobre</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="Paintings/Calendar/novembre.jpg"/>
+			<figure><img class="myImg" src="Paintings/Calendar/novembre.jpg"/>
 				<figcaption>Novembre</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="Paintings/Calendar/decembre.jpg"/>
+			<figure><img class="myImg" src="Paintings/Calendar/decembre.jpg"/>
 				<figcaption>D&eacute;cembre</figcaption>
 			</figure>
+		</div>
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+  		<!-- The Close Button -->
+  		<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  		<!-- Modal Content (The Image) -->
+  		<img class="modal-content" id="img01">
+
+ 		 <!-- Modal Caption (Image Text) -->
+ 		 <div id="caption"></div>
 		</div>
 		</div>
 	<div class ="footer">
@@ -108,6 +121,7 @@
 		</div>
 	</div>
 	<script>
+	// The Nav Bar Icon
       /*
        * Open the drawer when the menu icon is clicked.
        */
@@ -122,7 +136,30 @@
       main.addEventListener('click', function() {
         drawer.classList.remove('open');
       });
+	</script>
+	<script>
+	// Modal: Popup images
+	// Get the modal
+	var modal = document.getElementById('myModal');
 
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = $('.myImg');
+	var modalImg = $("#img01");
+	var captionText = document.getElementById("caption");
+		$('.myImg').click(function(){
+    		modal.style.display = "block";
+    		var newSrc = this.src;
+    		modalImg.attr('src', newSrc);
+    		captionText.innerHTML = this.alt;
+		});
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+  		modal.style.display = "none";
+	}
     </script>
 </body>
 </html>

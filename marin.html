@@ -42,75 +42,88 @@
 			</ul>
 		</div>
 		<div class="paintingpage">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<div class="paintings">
-			<figure><img src="unphareenbretagne.jpg"/>
+			<figure><img class="myImg" src="unphareenbretagne.jpg"/>
 				<figcaption>Un phare en Bretagne</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="ahes.jpg"/>
+			<figure><img class="myImg" src="ahes.jpg"/>
 				<figcaption>Ahes</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="evanescencebleue.jpg"/>
+			<figure><img class="myImg" src="evanescencebleue.jpg"/>
 				<figcaption>Evanescence Bleue</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="profondeursmarines.jpg"/>
+			<figure><img class="myImg" src="profondeursmarines.jpg"/>
 				<figcaption>Profondeurs Marines</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="lapetitemariniere.jpg"/>
+			<figure><img class="myImg" src="lapetitemariniere.jpg"/>
 				<figcaption>La petite mariniere</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="lacale.jpg"/>
+			<figure><img class="myImg" src="lacale.jpg"/>
 				<figcaption>La Cale</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="lesurfeur.jpg"/>
+			<figure><img class="myImg" src="lesurfeur.jpg"/>
 				<figcaption>Le surfeur</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="mareebasse.jpg"/>
+			<figure><img class="myImg" src="mareebasse.jpg"/>
 				<figcaption>Maree basse - SOLD</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="pompomrouge.jpg"/>
+			<figure><img class="myImg" src="pompomrouge.jpg"/>
 				<figcaption>Pompom rouge</figcaption>
 			</figure>
 		</div>		
 		<div class="paintings">
-			<figure><img src="matelots.jpg"/>
+			<figure><img class="myImg" src="matelots.jpg"/>
 				<figcaption>Les p'tits matelots</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="merblanche.jpg"/>
+			<figure><img class="myImg" src="merblanche.jpg"/>
 				<figcaption>Mer blanche</figcaption>
 			</figure>
 		</div>
 				<div class="paintings">
-			<figure><img src="lavague.jpg"/>
+			<figure><img class="myImg" src="lavague.jpg"/>
 				<figcaption>La vague</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="laplageduvorlen.jpg"/>
+			<figure><img class="myImg" src="laplageduvorlen.jpg"/>
 				<figcaption>La plage du Vorlen</figcaption>
 			</figure>
 		</div>
 		<div class="paintings">
-			<figure><img src="regate.jpg"/>
+			<figure><img class="myImg" src="regate.jpg"/>
 				<figcaption>Regate</figcaption>
 			</figure>
+		</div>
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+  		<!-- The Close Button -->
+  		<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  		<!-- Modal Content (The Image) -->
+  		<img class="modal-content" id="img01">
+
+ 		 <!-- Modal Caption (Image Text) -->
+ 		 <div id="caption"></div>
 		</div>
 		</div>
 	<div class ="footer">
@@ -118,6 +131,7 @@
 		</div>
 	</div>
 	<script>
+	// The Nav Bar Icon
       /*
        * Open the drawer when the menu icon is clicked.
        */
@@ -132,7 +146,30 @@
       main.addEventListener('click', function() {
         drawer.classList.remove('open');
       });
+	</script>
+	<script>
+	// Modal: Popup images
+	// Get the modal
+	var modal = document.getElementById('myModal');
 
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = $('.myImg');
+	var modalImg = $("#img01");
+	var captionText = document.getElementById("caption");
+		$('.myImg').click(function(){
+    		modal.style.display = "block";
+    		var newSrc = this.src;
+    		modalImg.attr('src', newSrc);
+    		captionText.innerHTML = this.alt;
+		});
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+  		modal.style.display = "none";
+	}
     </script>
 </body>
 </html>
