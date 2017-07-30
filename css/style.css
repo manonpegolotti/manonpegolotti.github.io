@@ -391,6 +391,12 @@ ul.img-list li:hover span.text-content {
 }
 .paintings2:hover {opacity: 0.7;}
 
+.paintings3 {
+	cursor: pointer;
+    transition: 0.3s;
+}
+.paintings3:hover {opacity: 0.7;}
+
 
 /* The Modal (background) */
 .modal {
