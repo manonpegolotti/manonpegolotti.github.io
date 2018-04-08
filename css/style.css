@@ -320,7 +320,7 @@ font-size: 140%;
 	max-width:50%;
 	float: left;
 	margin-top: 5%;
-	margin-right: 2%;
+	margin-right: 0%;
 }
 
 .pastevent {
@@ -337,7 +337,7 @@ font-size: 140%;
 .pastevent img {
 	max-width: 30%;
 	float: right;
-	margin-top: 3%;
+	margin-top: 10%;
 }
 .pop-out
     {
