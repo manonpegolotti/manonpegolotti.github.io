@@ -1,7 +1,7 @@
 html, body {
 	font-size: 100%;
-	background-color: #FFFFFF;
-	color: black;
+	background-color: #000000;
+	color: white;
 	font-family:"Century Gothic", Helvetica, Arial, sans-serif;
 	margin: 0;
   	padding: 0;
@@ -29,7 +29,7 @@ html, body {
 .title h2 {
 	margin: 0 0 1% 15%;
 	font-size: 110%;
-	color: black;
+	color: white;
 	float: left;
 	width: 100%;
 }
@@ -43,7 +43,7 @@ html, body {
 
 .nav {
 	width: 100%;
-	color: black;
+	color: white;
 	text-transform: uppercase;
 }
 .nav ul {
@@ -62,13 +62,13 @@ html, body {
 }
 .btn {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 .btn:hover {
 	text-decoration: none;
 	cursor: pointer; 
 	transition: background .5s;
-	color: 	black;
+	color: 	#48504c;
 }
 
 .nav ul li:hover ul {
@@ -295,7 +295,7 @@ font-size: 140%;
 
 .contact a{
 	text-decoration: none;
-	color: black;
+	color: white;
 	margin: 0;
 	display: inline-block;
 }
@@ -303,7 +303,7 @@ font-size: 140%;
 	text-decoration: none;
 	cursor: pointer; 
 	transition: background .5s;
-	color: 	black;
+	color: 	white;
 }
 .contact .facebook {
 	color: #3b5998;
@@ -354,7 +354,7 @@ font-size: 140%;
 /*Hover Paintings*/
 span.text-content {
   background: rgba(0,0,0,0.5);
-  color: black;
+  color: white;
   cursor: pointer;
   display: table;
   height: 150px;
