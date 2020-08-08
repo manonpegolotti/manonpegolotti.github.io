@@ -62,13 +62,13 @@ html, body {
 }
 .btn {
 	text-decoration: none;
-	color: black;
+	color: black
 }
 .btn:hover {
 	text-decoration: none;
 	cursor: pointer; 
 	transition: background .5s;
-	color: 	black;
+	color: 	red;
 }
 
 .nav ul li:hover ul {
