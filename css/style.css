@@ -45,6 +45,7 @@ html, body {
 	width: 100%;
 	color: black;
 	text-transform: uppercase;
+	font-weight: 900;
 }
 .nav ul {
 	list-style: none;
@@ -68,7 +69,7 @@ html, body {
 	text-decoration: none;
 	cursor: pointer; 
 	transition: background .5s;
-	color: 	red;
+	color: 	#911d1d;
 }
 
 .nav ul li:hover ul {
