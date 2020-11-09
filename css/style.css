@@ -317,10 +317,20 @@ font-size: 140%;
 	color: 	white;
 }
 
+.contact .instagram {
+	font-weight: bold;
+}
+.contact .instagram a:hover {
+	text-decoration: none;
+	cursor: pointer; 
+	transition: background .5s;
+	color: 	white;
+}
+
 .eventimg {
 	max-width:45%;
 	float: left;
-	margin-top: 5%;
+	margin-top: 11%;
 	margin-right: 0%;
 }
 
