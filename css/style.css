@@ -106,11 +106,14 @@ html, body {
 	display: block;
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 4%;
 }
 .main img{
 	display: block;
-    width: 100%;
+    width: 86%;
     max-height: 550px;
+    margin-left: 7%;
 }
 
 
@@ -287,9 +290,9 @@ font-size: 140%;
 .contact {
 	display: block;
     margin-top: 10%;
-    width: 48%;
+    width: 100%;
     text-align: center;
-    float: right;
+    float: center;
     position: relative;
 }
 
@@ -328,7 +331,7 @@ font-size: 140%;
 }
 
 .eventimg {
-	max-width:45%;
+	max-width:32%;
 	float: left;
 	margin-top: 11%;
 	margin-right: 0%;
