@@ -337,6 +337,13 @@ font-size: 140%;
 	margin-right: 0%;
 }
 
+.eventimg2 {
+	max-width:40%;
+	float: middle;
+	margin-top: 2%;
+	margin-right: 0%;
+}
+
 .pastevent {
 	display: inline-block;
 	float: clear;
